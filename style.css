@@ -1,54 +1,17 @@
 body {
     margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: black; /* Optional: Background outside the canvas */
     overflow: hidden;
-    background: #222;
 }
 
-/* Game canvas */
 canvas {
     display: block;
     position: absolute;
-    top: 0;
-    left: 0;
-}
-
-/* Popup Box */
-#popup {
-    position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 300px;
-    background: rgba(0, 0, 0, 0.8);
-    color: white;
-    padding: 20px;
-    border-radius: 10px;
-    text-align: center;
-    display: none;
-}
-
-.popup-content {
-    position: relative;
-}
-
-#close-popup {
-    position: absolute;
-    top: 5px;
-    right: 10px;
-    cursor: pointer;
-    font-size: 20px;
-}
-
-/* Animation for smooth player movement */
-@keyframes move {
-    from { transform: translateY(0); }
-    to { transform: translateY(-2px); }
-}
-
-.animated {
-    animation: move 0.2s infinite alternate ease-in-out;
-}
-
-.hidden {
-    display: none;
 }
