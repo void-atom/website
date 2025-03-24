@@ -1,17 +1,89 @@
 body {
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background: black; /* Optional: Background outside the canvas */
-    overflow: hidden;
+    font-family: 'Arial', sans-serif;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    color: #f0f0f0; /* Light text for dark background */
+    line-height: 1.6;
+    background-color: #000000; /* Black background */
 }
 
-canvas {
-    display: block;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+nav {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #333; /* Darker border for dark theme */
+}
+
+nav a {
+    text-decoration: none;
+    color: #f0f0f0; /* Light text */
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #ffffff; /* Brighter white on hover */
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: #ffffff; /* Pure white for heading */
+}
+
+.intro {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: #cccccc; /* Slightly lighter gray */
+}
+
+.bio {
+    margin-bottom: 30px;
+    font-size: 1.1rem;
+    color: #dddddd; /* Light gray */
+}
+.contact-icons {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.contact-icons a {
+    color: #f0f0f0;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    transition: all 0.3s ease;
+    padding: 5px;
+}
+
+.contact-icons a:hover {
+    color: #ffffff;
+    transform: translateY(-2px);
+}
+
+/* GitHub Icon */
+.icon-github {
+    width: 24px;
+    height: 24px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23f0f0f0' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22'%3E%3C/path%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* Medium Icon */
+.icon-medium {
+    width: 24px;
+    height: 24px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23f0f0f0' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M2 20h.01M7 20v-4'%3E%3C/path%3E%3Cpath d='M12.126 12.126a3 3 0 1 0 4.252-4.252 3 3 0 0 0-4.252 4.252z'%3E%3C/path%3E%3Cpath d='M17 20v-8.34a4 4 0 0 1 1.034-2.66l.84-.84a2 2 0 0 0 .586-1.414V6h-1'%3E%3C/path%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.contact-icons a:hover .icon-github,
+.contact-icons a:hover .icon-medium {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23ffffff' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M2 20h.01M7 20v-4'%3E%3C/path%3E%3Cpath d='M12.126 12.126a3 3 0 1 0 4.252-4.252 3 3 0 0 0-4.252 4.252z'%3E%3C/path%3E%3Cpath d='M17 20v-8.34a4 4 0 0 1 1.034-2.66l.84-.84a2 2 0 0 0 .586-1.414V6h-1'%3E%3C/path%3E%3C/svg%3E");
 }
